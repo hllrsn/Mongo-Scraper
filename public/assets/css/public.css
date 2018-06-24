@@ -1,7 +1,11 @@
 .background-image{
     background-color: ghostwhite;
-    background-image: url("../images/cprintingpress.jpg");
+    background-image: url("../images/cprintingpress2.jpg");
     
+}
+
+.body {
+    background-color: #043a21;
 }
 
 @media (min-width: 1px) {
