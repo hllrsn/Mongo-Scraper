@@ -34,9 +34,11 @@ var ArticleSchema = new Schema({
     required: false,
     unique: false
   },
-  // `note` is an object that stores a Note id
-  // The ref property links the ObjectId to the Note model
-  // This allows us to populate the Article with an associated Note
+
+  //`note` is an object that stores a note id
+  //ref property links the ObjectId to the note model
+  //Enables population of the article with an associated note
+
   note: {
     type: [{ type: Schema.Types.ObjectId, ref: 'Note'}],
   }
@@ -44,4 +46,4 @@ var ArticleSchema = new Schema({
 
 var Article = mongoose.model("Article", ArticleSchema);
 
-module.exports = Article; //exporting Article
+module.exports = Article; //Exporting article

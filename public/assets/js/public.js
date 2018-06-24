@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // event handler for deleting a note
+    //Event handler for deleting a note
     $(".delete-btn").click(function (event) {
         event.preventDefault();
         const id = $(this).attr("data");
@@ -10,7 +10,7 @@ $(document).ready(function () {
         })
     });
     
-    // event handler for opening the note modal
+    //Event handler for opening the note modal
     $(".note-btn").click(function (event) {
         event.preventDefault();
         const id = $(this).attr("data");
@@ -34,7 +34,6 @@ $(document).ready(function () {
         $('#note-modal').modal('toggle');
     });
 
-    // $('.btn-deletenote').click(function (event) {})
     $(document).on('click', '.btn-deletenote', function (){
             event.preventDefault();
             console.log($(this).attr("data"))
