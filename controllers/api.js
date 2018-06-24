@@ -4,11 +4,11 @@ const db = require("../models");
 const request = require("request"); //Makes HTTP calls
 const cheerio = require("cheerio");
  
-//A GET route for scraping the NYT website
+//GET route for scraping the NYT website
 router.get("/scrape", (req, res) => {
     console.log("scrape ran")
     //Grab the body of the HTML with request
-    request("http://www.startribune.com/", (error, response, body) => {
+    request("https://www.nytimes.com/", (error, response, body) => {
         if (!error && response.statusCode === 200) {
             //Load that into Cheerio and save it to $ for a shorthand selector
             const $ = cheerio.load(body);
