@@ -10,7 +10,7 @@
             <a class="nav-item nav-link active" href="/saved">Saved Articles
                 <span class="sr-only">(current)</span>
             </a>
-            <button href="/saved" type="button" class="btn btn-danger" id="scrape">Scrape NYT</button>
+            <button href="/saved" type="button" class="btn btn-warning" id="scrape">Scrape NYT</button>
         </div>
     </div>
 </nav>
@@ -19,7 +19,7 @@
             <div class="overlay">
                 <div class="caption">
                     <h1 class="display-1 text-white">Mongo Scraper</h1>
-                    <h2 class="text-white">NYT Edition</h2>
+                    <h2 class="text-white">News from NYT</h2>
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@
         <div class="col-12">
             {{#each articles}}
                 <div class="card w-90">
-                    <div class="card-header text-white bg-primary">
+                    <div class="card-header text-white bg-success">
                         <a href={{link}} target="_blank" class="text-white">
                             <h2>{{title}}</h2>
                         </a>
@@ -36,7 +36,7 @@
                         <p class="card-text">
                             {{summary}}
                         </p>
-                        <button data="{{_id}}" class="btn btn-info note-btn">Article Notes</button>
+                        <button data="{{_id}}" class="btn btn-primary note-btn">Article Notes</button>
                         <button data="{{_id}}" class="btn btn-danger delete-btn">Delete From Saved</button>
                     </div>
                 </div>
