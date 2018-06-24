@@ -10,7 +10,7 @@
             <a class="nav-item nav-link active" href="/saved">Saved Articles
                 <span class="sr-only">(current)</span>
             </a>
-            <button href="/saved" type="button" class="btn btn-warning" id="scrape">Scrape NYT</button>
+            <button href="/saved" type="button" class="btn btn-danger" id="scrape">Scrape NYT</button>
         </div>
     </div>
 </nav>
@@ -28,7 +28,7 @@
         <div class="col-12">
             {{#each articles}}
                 <div class="card w-90">
-                    <div class="card-header text-white bg-success">
+                    <div class="card-header text-white bg-dark">
                         <a href={{link}} target="_blank" class="text-white">
                             <h2>{{title}}</h2>
                         </a>
@@ -37,15 +37,15 @@
                         <p class="card-text">
                             {{summary}}
                         </p>
-                        <button data="{{_id}}" class="btn btn-primary note-btn">Article Notes</button>
-                        <button data="{{_id}}" class="btn btn-danger delete-btn">Delete From Saved</button>
+                        <button data="{{_id}}" class="btn btn-success note-btn">Article Notes</button>
+                        <button data="{{_id}}" class="btn btn-warning delete-btn">Delete From Saved</button>
                     </div>
                 </div>
             {{/each}}
         </div>
     </div>
 </div>
-<br><br>
+
 <div class="modal fade" id="note-modal" tabindex="-1" role="dialog" aria-labelledby="successMessage" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

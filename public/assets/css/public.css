@@ -8,6 +8,10 @@ body {
     background-color: #043a21;
 }
 
+.card {
+    padding-bottom: 15px;
+}
+
 @media (min-width: 1px) {
     .display-1 {
         font-size: 4rem
