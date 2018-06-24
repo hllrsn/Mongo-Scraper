@@ -12,6 +12,10 @@ body {
     margin: 0px 30px 30px 30px;
 }
 
+.navbar-nav {
+    text-align: right;
+}
+
 @media (min-width: 1px) {
     .display-1 {
         font-size: 4rem
